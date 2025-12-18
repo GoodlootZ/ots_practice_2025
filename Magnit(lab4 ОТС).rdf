@@ -1,0 +1,1176 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/"
+     xml:base="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Magnit="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#быть_причиной -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#быть_причиной">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Reason"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#быть_целевым_действием_для -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#быть_целевым_действием_для">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Reason"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#вызывать -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#вызывать">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#иметь_состояние -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#иметь_состояние">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#User"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Reason"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#материализоваться_в -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#материализоваться_в">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#предполагать_взаимодействие_с -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#предполагать_взаимодействие_с">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#предшествовать -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#предшествовать">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#являться_частью -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#являться_частью">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#codename -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#codename">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#eventName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#eventName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Banner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Banner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Button -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Button">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Check -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Check">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Click -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Click">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Reason -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Reason">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Screen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Screen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Scroll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Scroll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#View -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#View">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:eventName>startWindow_view</Magnit:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:eventName>startWindow_enter_click</Magnit:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:eventName>registerWindow_view</Magnit:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:eventName>registerWindow_number_type</Magnit:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:eventName>registerWindow_enter_click</Magnit:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:eventName>numberWindow_view</Magnit:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:eventName>numberWindow_code_type</Magnit:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:eventName>NumberWindow_enter_click</Magnit:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Ввёл_номер_телефона -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Ввёл_номер_телефона">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Reason"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:материализоваться_в rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Отображается_экран_регистрации"/>
+        <Magnit:материализоваться_в rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_набирает_номер_телефона"/>
+        <Magnit:материализоваться_в rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_кнопку_Далее"/>
+        <Magnit:предшествовать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Вход_в_систему"/>
+        <Magnit:name>Ввёл номер телефона</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Вход_в_систему -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Вход_в_систему">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Reason"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:быть_целевым_действием_для rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Хочет_войти"/>
+        <Magnit:быть_целевым_действием_для rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Хочет_зарегистрироваться"/>
+        <Magnit:материализоваться_в rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Отображается_экран_проверки_номера"/>
+        <Magnit:материализоваться_в rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_вводит_код"/>
+        <Magnit:материализоваться_в rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_Далее"/>
+        <Magnit:name>Вход в систему</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Использует_для_покупок -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Использует_для_покупок">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#User"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:иметь_состояние rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Хочет_войти"/>
+        <Magnit:иметь_состояние rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Хочет_зарегистрироваться"/>
+        <Magnit:name>Использует для покупок</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Кнонка_войти -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Кнонка_войти">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Button"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:являться_частью rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Начальный_экран"/>
+        <Magnit:codename>enter</Magnit:codename>
+        <Magnit:name>Кнонка войти</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Кнопка_Далее -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Кнопка_Далее">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Button"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:являться_частью rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Экран_регистрации"/>
+        <Magnit:codename>enter</Magnit:codename>
+        <Magnit:name>Кнопка Далее</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Кнопка_Далее2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Кнопка_Далее2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Button"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:являться_частью rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Экран_проверки"/>
+        <Magnit:codename>enter</Magnit:codename>
+        <Magnit:name>Кнопка Далее2</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Начал_регистрацию -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Начал_регистрацию">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Reason"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:материализоваться_в rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Отображается_начальный_экран"/>
+        <Magnit:материализоваться_в rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_Войти"/>
+        <Magnit:предшествовать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Ввёл_номер_телефона"/>
+        <Magnit:name>Начал регистрацию</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Начальный_экран -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Начальный_экран">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Screen"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:codename>startWindow</Magnit:codename>
+        <Magnit:name>Начальный экран</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Окно_для_ввода_кода -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Окно_для_ввода_кода">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Input"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:являться_частью rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Экран_проверки"/>
+        <Magnit:name>code</Magnit:name>
+        <Magnit:name>Окно для ввода кода</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Окно_для_ввода_номера -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Окно_для_ввода_номера">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Input"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:являться_частью rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Экран_регистрации"/>
+        <Magnit:codename>number</Magnit:codename>
+        <Magnit:name>Окно для ввода номера</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Открыл_приложение -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Открыл_приложение">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Reason"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:материализоваться_в rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Отображается_начальный_экран"/>
+        <Magnit:предшествовать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Начал_регистрацию"/>
+        <Magnit:name>Открыл приложение</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Отображается_начальный_экран -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Отображается_начальный_экран">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#View"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:быть_целевым_действием_для rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Открыл_приложение"/>
+        <Magnit:вызывать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event1"/>
+        <Magnit:предполагать_взаимодействие_с rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Начальный_экран"/>
+        <Magnit:предшествовать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_Войти"/>
+        <Magnit:name>view</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Отображается_экран_проверки_номера -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Отображается_экран_проверки_номера">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#View"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:вызывать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event6"/>
+        <Magnit:предполагать_взаимодействие_с rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Экран_проверки"/>
+        <Magnit:предшествовать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_вводит_код"/>
+        <Magnit:name>view</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Отображается_экран_регистрации -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Отображается_экран_регистрации">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#View"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:вызывать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event3"/>
+        <Magnit:предполагать_взаимодействие_с rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Экран_регистрации"/>
+        <Magnit:предшествовать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_набирает_номер_телефона"/>
+        <Magnit:name>view</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_вводит_код -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_вводит_код">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Type"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:вызывать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event7"/>
+        <Magnit:предполагать_взаимодействие_с rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Окно_для_ввода_кода"/>
+        <Magnit:предшествовать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_Далее"/>
+        <Magnit:name>type</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_набирает_номер_телефона -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_набирает_номер_телефона">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Type"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:вызывать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event4"/>
+        <Magnit:предполагать_взаимодействие_с rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Окно_для_ввода_номера"/>
+        <Magnit:предшествовать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_кнопку_Далее"/>
+        <Magnit:name>type</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_Войти -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_Войти">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Click"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:быть_целевым_действием_для rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Начал_регистрацию"/>
+        <Magnit:вызывать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event2"/>
+        <Magnit:предполагать_взаимодействие_с rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Кнонка_войти"/>
+        <Magnit:предполагать_взаимодействие_с rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Начальный_экран"/>
+        <Magnit:name>click</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_Далее -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_Далее">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Click"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:быть_целевым_действием_для rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Вход_в_систему"/>
+        <Magnit:вызывать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event8"/>
+        <Magnit:предполагать_взаимодействие_с rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Кнопка_Далее2"/>
+        <Magnit:name>click</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_кнопку_Далее -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Пользователь_нажимает_кнопку_Далее">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Click"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Step"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:быть_целевым_действием_для rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Ввёл_номер_телефона"/>
+        <Magnit:вызывать rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event5"/>
+        <Magnit:предполагать_взаимодействие_с rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Кнопка_Далее"/>
+        <Magnit:name>click</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Хочет_войти -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Хочет_войти">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Reason"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:быть_причиной rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Открыл_приложение"/>
+        <Magnit:name>Хочет войти</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Хочет_зарегистрироваться -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Хочет_зарегистрироваться">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Reason"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:быть_причиной rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Открыл_приложение"/>
+        <Magnit:name>Хочет зарегистрироваться</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Экран_проверки -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Экран_проверки">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Screen"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:name>numberWindow</Magnit:name>
+        <Magnit:name>Экран проверки</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Экран_регистрации -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Экран_регистрации">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Screen"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#МагнитРегистрация"/>
+        <Magnit:codename>registerWindow</Magnit:codename>
+        <Magnit:name>Экран регистрации</Magnit:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/cn1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/cn">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/an">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/tmp1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/tmp2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/tmp3">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/result">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/t1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/res">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/e"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#предполагать_взаимодействие_с"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/a"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#вызывать"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/a"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/e"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#являться_частью"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i1"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#codename"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i1"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/cn1"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#codename"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/cn"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#name"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/a"/>
+                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/an"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#stringConcat"/>
+                                                                                                        <swrl:arguments>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/tmp1"/>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/cn"/>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                <rdf:first>_</rdf:first>
+                                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </swrl:arguments>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#stringConcat"/>
+                                                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/tmp2"/>
+                                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/tmp1"/>
+                                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/cn1"/>
+                                                                                                                </swrl:arguments>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#stringConcat"/>
+                                                                                                                        <swrl:arguments>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/tmp3"/>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/tmp2"/>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                <rdf:first>_</rdf:first>
+                                                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:rest>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </swrl:arguments>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#stringConcat"/>
+                                                                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/result"/>
+                                                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/tmp3"/>
+                                                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/an"/>
+                                                                                                                                </swrl:arguments>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#eventName"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/result"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Action"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Interface"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#Event"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/e"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#предполагать_взаимодействие_с"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/a"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#вызывать"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/a"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/e"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#codename"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/i"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/cn"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#name"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/a"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/an"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#stringConcat"/>
+                                                                                <swrl:arguments>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/t1"/>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/cn"/>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                        <rdf:first>_</rdf:first>
+                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#stringConcat"/>
+                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/res"/>
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/t1"/>
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/an"/>
+                                                                                        </swrl:arguments>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit#eventName"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kirill/ontologies/2025/11/Magnit/res"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
